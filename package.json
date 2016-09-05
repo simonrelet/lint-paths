@@ -1,0 +1,33 @@
+{
+  "name": "lint-paths",
+  "version": "0.0.3",
+  "description": "Checks that paths correspond to a desired pattern",
+  "main": "./lib/index.js",
+  "bin": "./bin/cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonrelet/lint-paths.git"
+  },
+  "keywords": [
+    "lint",
+    "paths"
+  ],
+  "author": "Simon Relet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonrelet/lint-paths/issues"
+  },
+  "homepage": "https://github.com/simonrelet/lint-paths#readme",
+  "eslintConfig": {
+    "extends": "simonrelet"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "glob": "^7.0.6",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-simonrelet": "0.0.3"
+  }
+}
