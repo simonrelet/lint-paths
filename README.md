@@ -24,6 +24,7 @@ lint-paths [options] root[, root]
 
 **Options**
 
+ * `-h`, `--help`: display a help message,
  * `-p`, `--pattern`: the expected pattern of the paths, `^[^A-Z]*$` by default,
  * `-i`, `--ignore`: a pattern to ignore, this options can be repeated multiple
    times.
