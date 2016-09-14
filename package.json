@@ -1,6 +1,6 @@
 {
   "name": "lint-paths",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Checks that paths correspond to a desired pattern",
   "main": "./lib/index.js",
   "bin": "./bin/cli.js",

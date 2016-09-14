@@ -54,7 +54,7 @@ const options = {
 const errors = lintPaths(options);
 
 if (errors.length > 0) {
-  lintPaths.outputErrors(errors);
+  lintPaths.outputErrors(errors, options);
   process.exit(1);
 }
 
