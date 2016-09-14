@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-/* eslint no-console: "off" */
 'use strict';
 
 const defaultOptions = {
@@ -55,12 +54,7 @@ const options = {
 const errors = lintPaths(options);
 
 if (errors.length > 0) {
-  const pattern = colors.blue(options.pattern);
-  const s = errors.length === 1 ? '' : 's';
-  const errorMsg = colors.red(`${errors.length} invalid path${s}`);
-  const msg = `${errorMsg} (expected pattern: ${pattern})`;
-
-  console.error(`\n  ${errors.join('\n  ')}\n\n${msg}\n`);
+  lintPaths.outputErrors(errors);
   process.exit(1);
 }
 

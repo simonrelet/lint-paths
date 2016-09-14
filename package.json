@@ -1,6 +1,6 @@
 {
   "name": "lint-paths",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Checks that paths correspond to a desired pattern",
   "main": "./lib/index.js",
   "bin": "./bin/cli.js",
@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/simonrelet/lint-paths#readme",
   "eslintConfig": {
-    "extends": "simonrelet"
+    "extends": "simonrelet",
+    "rules": {
+      "no-console": "off"
+    }
   },
   "dependencies": {
     "colors": "^1.1.2",
