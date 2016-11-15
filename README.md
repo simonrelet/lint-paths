@@ -26,8 +26,8 @@ lint-paths [options] root[, root]
 
  * `-h`, `--help`: display a help message,
  * `-p`, `--pattern`: the expected pattern of the paths, `^[^A-Z]*$` by default,
- * `-i`, `--ignore`: a pattern to ignore, this options can be repeated multiple
-   times.
+ * `-i`, `--ignore`: a valid RegExp pattern to ignore, this options can be
+   repeated multiple times.
 
 **Examples**
 
@@ -52,7 +52,7 @@ _Parameter_
  * `options`: an _object_ containing:
    * `roots` (_array_): the _array_ of folder to scan,
    * `pattern` (_RegExp_): the expected pattern of the paths,
-   * `ignore` (_array_): the _array_ of patterns to ignore.
+   * `ignore` (_array_): the _array_ of valid RegExp patterns to ignore.
 
 _Return value_
 
